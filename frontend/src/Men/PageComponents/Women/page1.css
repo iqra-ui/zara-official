@@ -1,0 +1,17 @@
+* {
+  scroll-behavior: smooth;
+}
+
+#page1 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+#page1 .carousel-control-prev,
+#page1 .carousel-control-next,
+#page1 .carousel-indicators {
+  display: none;
+}
