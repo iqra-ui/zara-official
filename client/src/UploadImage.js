@@ -31,7 +31,7 @@ function UploadImage() {
         }
         formData.append("name",data.name);
         formData.append("description",data.description);
-        const response= await axios.post(process.env.MONGO_URL + "category/create-category", formData);
+        const response= await axios.post(https://zara-hof3.onrender.com + "category/create-category", formData);
         setData({
             images:[],
             name:"",

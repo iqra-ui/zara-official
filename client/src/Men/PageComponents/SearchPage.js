@@ -40,10 +40,10 @@ const SearchPage = () => {
             {values?.results.map((p) => (
               <div className="card border-0    cursor-pointer">
                 <Item
-                  img={`http://localhost:8080/` + p.images[0]}
-                  img2={`http://localhost:8080/` + p.images[1]}
-                  img3={`http://localhost:8080/` + p.images[2]}
-                  img4={`http://localhost:8080/` + p.images[3]}
+                  img={`https://zara-hof3.onrender.com/` + p.images[0]}
+                  img2={`https://zara-hof3.onrender.com/` + p.images[1]}
+                  img3={`https://zara-hof3.onrender.com/` + p.images[2]}
+                  img4={`https://zara-hof3.onrender.com/` + p.images[3]}
                   name={p.name}
                   price={p.price}
                 />

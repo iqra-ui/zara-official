@@ -24,7 +24,7 @@ function Page1() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Link to="/kids/new">
+          <Link to="/kids">
             <Kids />
           </Link>
         </Carousel.Item>

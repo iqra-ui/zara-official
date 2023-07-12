@@ -56,6 +56,7 @@ import Page2K from "./Men/SubComponents/Kids/Page2K";
 import Swimmer from "./Men/SubComponents/Kids/Swimmer";
 import Page3K from "./Men/SubComponents/Kids/Page3K";
 import SearchPage from "./Men/PageComponents/SearchPage";
+import CheckOut from "./Men/SubComponents/CheckOut";
 
 function App(props) {
   const [data, setData] = useState([]);
@@ -64,7 +65,7 @@ function App(props) {
   useEffect(() => {
     async function getCategory() {
       const response = await axios.get(
-        "http://localhost:8080/api/v1/category/get-category"
+        "https://zara-hof3.onrender.com/api/v1/category/get-category"
       );
       setData(response.data.category);
     }
@@ -74,7 +75,7 @@ function App(props) {
   useEffect(() => {
     async function getAllProduct() {
       const response = await axios.get(
-        "http://localhost:8080/api/v1/product/get-product"
+        "https://zara-hof3.onrender.com/api/v1/product/get-product"
       );
       setData1(response.data.products);
     }
@@ -129,8 +130,8 @@ function App(props) {
             />
           </Route>
 
-          <Route path="/kids/new" element={<Page2K />}>
-            <Route path="/kids/new" element={<New />} />
+          <Route path="/kids" element={<Page2K />}>
+            <Route path="/kids" element={<New />} />
             <Route
               path="girl"
               element={<Girl data={data1} filter={"girlsDress"} />}
@@ -148,6 +149,7 @@ function App(props) {
           <Route path="/productK/:_id" element={<Page3K />} />
 
           <Route path="/cartPage" element={<OrderPage />} />
+          <Route path="/checkOut" element={<CheckOut/>}/>
 
         
           <Route path="/dashboard" element={<AdminRoute />}>

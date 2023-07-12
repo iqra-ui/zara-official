@@ -17,7 +17,7 @@ const Products = () => {
   const getAllProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product`
+        `https://zara-hof3.onrender.com/api/v1/product/get-product`
       );
       if (data?.success) {
         setProducts(data?.products);
@@ -34,7 +34,7 @@ const Products = () => {
   const getProductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/product-category`
+        `https://zara-hof3.onrender.com/api/v1/product/product-category`
       );
       setProducts(data?.products);
       setCategory(data?.category);
@@ -69,7 +69,7 @@ const Products = () => {
   const filterProduct = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/product/product-filters",
+        "https://zara-hof3.onrender.com/api/v1/product/product-filters",
         { checked }
       );
       setProducts(data?.products);
@@ -81,7 +81,7 @@ const Products = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/category/get-category"
+        "https://zara-hof3.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -143,10 +143,10 @@ const Products = () => {
             
                 >
                   <Item
-                    img={`http://localhost:8080/` + p.images[0]}
-                    img2={`http://localhost:8080/` + p.images[1]}
-                    img3={`http://localhost:8080/` + p.images[2]}
-                    img4={`http://localhost:8080/` + p.images[3]}
+                    img={`https://zara-hof3.onrender.com/` + p.images[0]}
+                    img2={`https://zara-hof3.onrender.com/` + p.images[1]}
+                    img3={`https://zara-hof3.onrender.com/` + p.images[2]}
+                    img4={`https://zara-hof3.onrender.com/` + p.images[3]}
                     name={p.name}
                     price={p.price}
                   />

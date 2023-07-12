@@ -25,6 +25,16 @@ function New() {
             
       </div>
 
+       {/* 1 large img */}
+       <div
+        className="pt-10 lg:pt-20  flex shrink justify-center md:pt-20 cursor-pointer"
+        xs={12}
+        md={12}
+       
+      >
+        <img className="w-5/6" src="../images/kids/LL.jpg" />
+      </div>
+
       {/* 2 imges */}
 
       <div>

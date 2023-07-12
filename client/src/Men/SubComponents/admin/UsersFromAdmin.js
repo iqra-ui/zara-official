@@ -14,7 +14,7 @@ const UsersFromAdmin = () => {
   const getUsers = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/getlogin"
+        "https://zara-hof3.onrender.com/api/v1/auth/getlogin"
       );
       setUsers(data.Users);
     } catch (error) {

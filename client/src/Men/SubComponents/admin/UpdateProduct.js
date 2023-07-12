@@ -24,7 +24,7 @@ const UpdateProduct = () => {
   const getSingleProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product/${params._id}`
+        `https://zara-hof3.onrender.com/api/v1/product/get-product/${params._id}`
       );
 
       setName(data.products.name);
@@ -46,7 +46,7 @@ const UpdateProduct = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/category/get-category"
+        "https://zara-hof3.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -77,7 +77,7 @@ const UpdateProduct = () => {
       productData.append("price", price);
       productData.append("category", category);
       const { data } = axios.put(
-        `http://localhost:8080/api/v1/product/update-product/${id}`,
+        `https://zara-hof3.onrender.com/api/v1/product/update-product/${id}`,
         productData
       );
       if (data?.success) {
@@ -98,7 +98,7 @@ const UpdateProduct = () => {
       let answer = window.prompt("Are You Sure want to delete this product ? ");
       if (!answer) return;
       const { data } = await axios.delete(
-        `http://localhost:8080/api/v1/product/product-delete/${id}`
+        `https://zara-hof3.onrender.com/api/v1/product/product-delete/${id}`
       );
       toast.success("Product DEleted Succfully");
       navigate("/dashboard/admin/products");

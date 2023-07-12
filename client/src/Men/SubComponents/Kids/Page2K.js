@@ -31,7 +31,7 @@ function Page2K() {
             
           }}
         >
-          <Link to="/kids/new" className="no-underline text-black">
+          <Link to="/kids" className="no-underline text-black">
             NEW
           </Link>
         </span>

@@ -16,7 +16,7 @@ const Categorys = () => {
   // const getAllCategory = async () => {
   //   try {
   //     const { data } = await axios.get(
-  //       "http://localhost:8080/api/v1/category/get-category"
+  //       "https://zara-hof3.onrender.com/api/v1/category/get-category"
   //     );
   //     setCategory(data.category);
   //   } catch (error) {
@@ -56,7 +56,7 @@ const Categorys = () => {
                   >
                     <div className="card m-2" style={{ width: "12rem" }}>
                       <img
-                        src={`http://localhost:8080/` + p.images[0]}
+                        src={`https://zara-hof3.onrender.com/` + p.images[0]}
                         className="card-img-top"
                         alt={p.name}
                       />

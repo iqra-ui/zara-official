@@ -95,12 +95,44 @@ function ViewAll() {
         </Container>
       </div>
 
+      {/* 1 large img */}
+      <div
+        className="pt-10 lg:pt-40  flex shrink justify-center md:pt-48 cursor-pointer"
+        xs={12}
+        md={12}
+       
+      >
+        <img className="w-5/6" src="../images/menC/large_3.jpg" />
+      </div>
+
       {/* 1 small img */}
       <div
         className="flex justify-center shrink  pt-20 cursor-pointer"
         onClick={() => navigate(`/men/dresses`)}
       >
         <img src="../images/men/dressesM/mp13/1.jpg" />
+      </div>
+
+         {/* 2 imges */}
+         <div>
+        <Container className="items-center  pt-10 w-3/4 md:pt-20 lg:px-36 cursor-pointer">
+          <Row>
+            <Col md={6} onClick={() => navigate(`/men/joggers`)}>
+              <Item
+                img={"../images/men/dressesM/mp13/3.jpg"}
+                name="JOGGERS WAIST TROUSERS"
+                price="59.95"
+              />
+            </Col>
+            <Col md={6} onClick={() => navigate(`/men/joggers`)}>
+              <Item
+                img={"../images/men/dressesM/mp12/3.jpg"}
+                name="JOGGERS WAIST TROUSERS"
+                price="59.95"
+              />
+            </Col>
+          </Row>
+        </Container>
       </div>
       <Outlet />
     </div>

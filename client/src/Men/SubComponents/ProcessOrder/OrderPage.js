@@ -18,7 +18,7 @@ function OrderPage({props}) {
   useEffect(() => {
     async function getAllProduct() {
       const response = await axios.get(
-        "http://localhost:8080/api/v1/product/get-product"
+        "https://zara-hof3.onrender.com/api/v1/product/get-product"
       );
       setData1(response.data.products);
     }

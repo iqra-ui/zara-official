@@ -26,10 +26,10 @@ function NewBorn({ data, filter }) {
               onClick={() => navigate(`/productK/${d._id}`)}
             >
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />
@@ -55,10 +55,10 @@ function NewBorn({ data, filter }) {
             <div key={i}
             onClick={() => navigate(`/productK/${d._id}`)}>
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />
@@ -92,10 +92,10 @@ function NewBorn({ data, filter }) {
             <div key={i} className="  md:pt-30 md:px-16 lg:px-36 cursor-pointer" 
             onClick={() => navigate(`/productK/${d._id}`)}>
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />
@@ -122,10 +122,10 @@ function NewBorn({ data, filter }) {
             <div key={i}
             onClick={() => navigate(`/productK/${d._id}`)}>
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />
@@ -147,10 +147,10 @@ function NewBorn({ data, filter }) {
           .map((d, i) => (
             <div key={i}  onClick={() => navigate(`/productK/${d._id}`)}>
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />
@@ -169,10 +169,10 @@ function NewBorn({ data, filter }) {
           .map((d, i) => (
             <div key={i}>
               <Item
-                img={`http://localhost:8080/` + d.images[0]}
-                img2={`http://localhost:8080/` + d.images[1]}
-                img3={`http://localhost:8080/` + d.images[2]}
-                img4={`http://localhost:8080/` + d.images[3]}
+                img={`https://zara-hof3.onrender.com/` + d.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + d.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + d.images[3]}
                 name={d.name}
                 price={d.price}
               />

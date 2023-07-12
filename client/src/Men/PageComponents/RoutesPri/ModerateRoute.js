@@ -12,7 +12,7 @@ export default function ModerateRoute() {
   useEffect(() => {
     const authCheck = async () => {
       const res = await axios.get(
-        `http://localhost:8080/api/v1/auth/modrate-auth`
+        `https://zara-hof3.onrender.com/api/v1/auth/modrate-auth`
       );
       if (res.data.ok) {
         setOk(true);

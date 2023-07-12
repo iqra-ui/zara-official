@@ -34,7 +34,7 @@ const CreateCatagory = () => {
       categoryData.append("images", images);
       categoryData.append("category", category);
       const { data } = axios.post(
-        "http://localhost:8080/api/v1/category/create-category",
+        "https://zara-hof3.onrender.com/api/v1/category/create-category",
         categoryData
       );
       if (data?.success) {

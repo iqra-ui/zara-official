@@ -13,7 +13,7 @@ const Orders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/auth/orders`
+        `https://zara-hof3.onrender.com/api/v1/auth/orders`
       );
       setOrders(data);
     } catch (error) {
@@ -67,7 +67,7 @@ const Orders = () => {
                         <div className="row mb-2 p-3 card flex-row" key={p._id}>
                           <div className="col-md-1">
                             <img
-                              src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                              src={`https://zara-hof3.onrender.com/api/v1/product/product-photo/${p._id}`}
                               className="card-img-top"
                               alt={p.name}
                               width="100px"

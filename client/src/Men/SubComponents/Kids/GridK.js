@@ -30,9 +30,9 @@ function GridK({data, filter}) {
             className="top-0 scroll-smooth relative"
           >
             <Item
-              img={`http://localhost:8080/` + d.images[0]}
-              img2={`http://localhost:8080/` + d.images[1]}
-              img3={`http://localhost:8080/` + d.images[2]}
+              img={`https://zara-hof3.onrender.com/` + d.images[0]}
+              img2={`https://zara-hof3.onrender.com/` + d.images[1]}
+              img3={`https://zara-hof3.onrender.com/` + d.images[2]}
               name={d.name}
               price={d.price}
             />{" "}

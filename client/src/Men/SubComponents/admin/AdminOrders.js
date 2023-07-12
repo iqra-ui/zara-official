@@ -27,7 +27,7 @@ const AdminOrders = () => {
   const getOrders = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/auth/all-orders"
+        "https://zara-hof3.onrender.com/api/v1/auth/all-orders"
       );
       setOrders(data);
     } catch (error) {
@@ -42,7 +42,7 @@ const AdminOrders = () => {
   const handleChange = async (orderId, value) => {
     try {
       const { data } = await axios.put(
-        `http://localhost:8080/api/v1/auth/order-status/${orderId}`,
+        `https://zara-hof3.onrender.com/api/v1/auth/order-status/${orderId}`,
         {
           status: value,
         }
@@ -104,7 +104,7 @@ const AdminOrders = () => {
                         <div className="row mb-2 p-2 flex-row" key={p._id}>
                           <div className="col-md-1">
                             <img
-                              src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                              src={`https://zara-hof3.onrender.com/api/v1/product/product-photo/${p._id}`}
                               className="card-img-top card-img-bottom"
                               alt={p.name}
                               width="100px"

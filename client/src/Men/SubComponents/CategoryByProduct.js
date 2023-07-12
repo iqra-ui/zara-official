@@ -15,7 +15,7 @@ const CategoryByProduct = () => {
   const getProductsByCat = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/product-category/${params.slug}`
+        `https://zara-hof3.onrender.com/api/v1/product/product-category/${params.slug}`
       );
       setProducts(data?.products);
       setCategory(data?.category);
@@ -50,7 +50,7 @@ const CategoryByProduct = () => {
   const filterProduct = async () => {
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/product/product-filters",
+        "https://zara-hof3.onrender.com/api/v1/product/product-filters",
         { checked }
       );
       setProducts(data?.products);
@@ -62,7 +62,7 @@ const CategoryByProduct = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/category/get-category"
+        "https://zara-hof3.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -149,10 +149,10 @@ const CategoryByProduct = () => {
               style={{ width: "12rem" }}
             >
               <Item
-                img={`http://localhost:8080/` + p.images[0]}
-                img2={`http://localhost:8080/` + p.images[1]}
-                img3={`http://localhost:8080/` + p.images[2]}
-                img4={`http://localhost:8080/` + p.images[3]}
+                img={`https://zara-hof3.onrender.com/` + p.images[0]}
+                img2={`https://zara-hof3.onrender.com/` + p.images[1]}
+                img3={`https://zara-hof3.onrender.com/` + p.images[2]}
+                img4={`https://zara-hof3.onrender.com/` + p.images[3]}
                 name={p.name}
                 price={p.price}
               />

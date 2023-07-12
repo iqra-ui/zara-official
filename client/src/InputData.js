@@ -21,7 +21,7 @@
 //   const getCategories = async () => {
 //     try {
 //       const { data } = await axios.get(
-//         `http://localhost:8080/api/v1/category/get-category`
+//          process.env.MONGO_URL  + `/api/v1/category/get-category`
 //       );
 //       if (data?.success) {
 //         setCategories(data?.category);
@@ -38,7 +38,7 @@
 //   // const getAllProduct = async () => {
 //   //   try {
 //   //     const { data } = await axios.get(
-//   //       "http://localhost:8080/api/v1/product/get-product"
+//   //        process.env.MONGO_URL  + "/api/v1/product/get-product"
 //   //     );
 //   //     if (data?.success) {
 //   //       setProduct(data?.products);
@@ -65,7 +65,7 @@
 //       productData.append("price", price);
 //       productData.append("images", images);
 //       productData.append("category", category);
-//       const { data } = axios.post("http://localhost:8080/api/v1/product/create-product",
+//       const { data } = axios.post( process.env.MONGO_URL  + "/api/v1/product/create-product",
 //         productData
 //       );
 //       if (data?.success) {
@@ -97,7 +97,7 @@
 //   //   formData.append('category', data.category);
 
 //   //   const response = axios.post(
-//   //           "http://localhost:8080/api/v1/product/create-product",
+//   //            process.env.MONGO_URL  + "/api/v1/product/create-product",
 //   //          formData
 //   //         );
 
@@ -191,10 +191,10 @@
 //         {products?.map((p, i) => (
 //           <div className="card m-2 w-64 flex column  cursor-pointer">
 //             <Item
-//                         img={`http://localhost:8080/` + p.images[0]}
-//                         img2={`http://localhost:8080/` + p.images[1]}
-//                         img3={`http://localhost:8080/` + p.images[2]}
-//                         img4={`http://localhost:8080/` + p.images[3]}
+//                         img={ process.env.MONGO_URL  + `/` + p.images[0]}
+//                         img2={ process.env.MONGO_URL  + `/` + p.images[1]}
+//                         img3={ process.env.MONGO_URL  + `/` + p.images[2]}
+//                         img4={ process.env.MONGO_URL  + `/` + p.images[3]}
 //                         name={p.name}
 //                         price={p.price}
 //                       />
@@ -211,7 +211,7 @@
 //         {/* <h1 className="ml-5 mt-10">get product list</h1>
 //         {products?.map((p,i)=>{
 //           <div className=" card m-2">
-//       <img src="http://localhost:8080/Uploads//1684990807242logo2.png"/>
+//       <img src= process.env.MONGO_URL  + "/Uploads//1684990807242logo2.png"/>
 //       <p>{p.name}</p>
 //           </div>
 //         })} */}
@@ -219,9 +219,9 @@
 // {/* <h1>get</h1>
 //         {products?.map((p, i) => (
 //           <div className="card m-2" style={{ width: "12rem" }}>
-//             <img src={`http://localhost:8080/` + p.images[0]} />
-//             <img src={`http://localhost:8080/` + p.images[1]} />
-//             <img src={`http://localhost:8080/` + p.images[2]} />
+//             <img src={ process.env.MONGO_URL  + `/` + p.images[0]} />
+//             <img src={ process.env.MONGO_URL  + `/` + p.images[1]} />
+//             <img src={ process.env.MONGO_URL  + `/` + p.images[2]} />
 //             <h5 className="card-title">{p.name}</h5>
 //             <p className="card-text">{p.description}</p>
 //           </div>

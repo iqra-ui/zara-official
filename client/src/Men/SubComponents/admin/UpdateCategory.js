@@ -22,7 +22,7 @@ const UpdateCategory = () => {
   const getSingleCategory = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/category/single-category/${params.slug}`
+        `https://zara-hof3.onrender.com/api/v1/category/single-category/${params.slug}`
       );
 
       setName(data.category.name);
@@ -41,7 +41,7 @@ const UpdateCategory = () => {
   const getAllCategory = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:8080/api/v1/category/get-category"
+        "https://zara-hof3.onrender.com/api/v1/category/get-category"
       );
       if (data?.success) {
         setCategories(data?.category);
@@ -65,7 +65,7 @@ const UpdateCategory = () => {
       categoryData.append("description", description);
       photo && categoryData.append("photo", photo);
       const { data } = axios.put(
-        `http://localhost:8080/api/v1/category/update-category/${id}`,
+        `https://zara-hof3.onrender.com/api/v1/category/update-category/${id}`,
         categoryData
       );
       if (data?.success) {
@@ -86,7 +86,7 @@ const UpdateCategory = () => {
       let answer = window.prompt("Are You Sure want to delete this product ? ");
       if (!answer) return;
       const { data } = await axios.delete(
-        `http://localhost:8080/api/v1/category/delete-category/${id}`
+        `https://zara-hof3.onrender.com/api/v1/category/delete-category/${id}`
       );
       toast.success("category DEleted Succfully");
       navigate("/dashboard/admin/categorys");
@@ -135,7 +135,7 @@ const UpdateCategory = () => {
                     ) : (
                       <div className="text-center flex justify-center">
                         <img
-                          src={`http://localhost:8080/api/v1/category/category-photo/${id}`}
+                          src={`https://zara-hof3.onrender.com/api/v1/category/category-photo/${id}`}
                           alt="product_photo"
                           width={"300px"}
                           height={"400px"}

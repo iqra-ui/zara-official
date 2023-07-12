@@ -12,7 +12,7 @@ export default function useProduct() {
   const getAllProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product`
+        `https://zara-hof3.onrender.com/api/v1/product/get-product`
       );
       if (data?.success) {
         setProducts(data?.products);

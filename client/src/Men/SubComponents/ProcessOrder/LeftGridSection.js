@@ -77,7 +77,7 @@ function LeftGridSection() {
              
               <div className="">
                 <img
-                  src={`http://localhost:8080/` + p.images[0]}
+                  src={`https://zara-hof3.onrender.com/` + p.images[0]}
                   className=""
                   alt={p.name}
                 />

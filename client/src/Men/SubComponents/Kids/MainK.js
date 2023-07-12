@@ -212,19 +212,19 @@ function MainK({data, filter}) {
             <div key={i}>
               <div className="snap-always  w-full h-full object-cover object-top">
                 <img
-                  src={`http://localhost:8080/` + d.images[0]}
+                  src={`https://zara-hof3.onrender.com/` + d.images[0]}
                   className="w-full h-full object-cover  "
                 />
                 <img
-                  src={`http://localhost:8080/` + d.images[1]}
+                  src={`https://zara-hof3.onrender.com/` + d.images[1]}
                   className=" w-full h-full object-cover"
                 />
                 <img
-                  src={`http://localhost:8080/` + d.images[2]}
+                  src={`https://zara-hof3.onrender.com/` + d.images[2]}
                   className="  w-full h-full object-cover"
                 />
                  <img
-                    src={`http://localhost:8080/` + d.images[3]}
+                    src={`https://zara-hof3.onrender.com/` + d.images[3]}
                     className="  w-full h-full object-cover"
                   />
               </div>
@@ -277,22 +277,22 @@ function MainK({data, filter}) {
               }}
             >
               <img
-                src={`http://localhost:8080/` + d.images[0]}
+                src={`https://zara-hof3.onrender.com/` + d.images[0]}
                 className="m-1 "
                 alt=""
               />
               <img
-                src={`http://localhost:8080/` + d.images[1]}
+                src={`https://zara-hof3.onrender.com/` + d.images[1]}
                 className="m-1 "
                 alt=""
               />
               <img
-                src={`http://localhost:8080/` + d.images[2]}
+                src={`https://zara-hof3.onrender.com/` + d.images[2]}
                 className="m-1 "
                 alt=""
               />
               <img
-                src={`http://localhost:8080/` + d.images[3]}
+                src={`https://zara-hof3.onrender.com/` + d.images[3]}
                 className="m-1 "
                 alt=""
               />
@@ -515,7 +515,7 @@ function MainK({data, filter}) {
                   <div className="snap-always snap-start w-full h-full object-cover object-top">
                     <img
                       className="w-24 mt-4"
-                      src={`http://localhost:8080/` + d.images[0]}
+                      src={`https://zara-hof3.onrender.com/` + d.images[0]}
                     />
                     <span>
                       <p
@@ -552,7 +552,7 @@ function MainK({data, filter}) {
                       <div>
                         <img
                           className="w-26 p-0 mt-4 "
-                          src={`http://localhost:8080/` + d.images[0]}
+                          src={`https://zara-hof3.onrender.com/` + d.images[0]}
                         />
                         {d.price}
                       </div>
